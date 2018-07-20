@@ -182,7 +182,9 @@
 				<img src="imagens/banners/banner2.jpg">
 				<img src="imagens/banners/banner3.jpg">
 			</div>
-			<div class="controller"></div>
+			<div class="controller">
+				<!--SPAN DAS BOLINHAS DO SLIDER-->
+			</div>
 		</div>
 		<div class="hover-section-display">
 			<div class="hover-painel" id="hoverServicos">
