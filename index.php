@@ -30,7 +30,6 @@
             .main-content{
                 width: 100%;
                 margin: 0 auto;
-                min-height: 300px;
             }
         </style>
         <!--END PAGE CSS-->
@@ -47,6 +46,7 @@
         <?php
             require_once "@link-body-scripts.php";
             require_once "@include-header-principal.php";
+			require_once "@include-vitrine.php";
             /*PAGE CUSTONS*/
             echo "<div class='main-content'>";
 			
