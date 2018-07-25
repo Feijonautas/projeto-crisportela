@@ -160,9 +160,9 @@
 		</div>
 		<div class="links-display">
 			<a href="index.php">INÍCIO</a>
-			<a href="">SOBRE</a>
-			<a href="" js-target-hover='hoverServicos'>SERVIÇOS</a>
-			<a href="" js-target-hover='hoverCursos'>CURSOS</a>
+			<a href="sobre.php">SOBRE</a>
+			<a href="servicos.php" js-target-hover='hoverServicos'>SERVIÇOS</a>
+			<a href="cursos.php" js-target-hover='hoverCursos'>CURSOS</a>
 			<a href="">CONTATO</a>
 		</div>
 		<div class="contact-display">
