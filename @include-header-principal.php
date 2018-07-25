@@ -159,7 +159,7 @@
 			<!--<img src="imagens/identidadeVisual/<?= $cls_paginas->logo; ?>">-->
 		</div>
 		<div class="links-display">
-			<a href="">INÍCIO</a>
+			<a href="index.php">INÍCIO</a>
 			<a href="">SOBRE</a>
 			<a href="" js-target-hover='hoverServicos'>SERVIÇOS</a>
 			<a href="" js-target-hover='hoverCursos'>CURSOS</a>
