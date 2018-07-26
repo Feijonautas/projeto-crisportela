@@ -1,5 +1,6 @@
 <style>
 	.header-principal{
+		position: relative;
 		width: 100%;
 		display: flex;
 		max-height: 100vh;
@@ -39,13 +40,14 @@
 		padding-left: 5px;
 	}
 	.header-principal .nav-display .contact-display{
-		position: relative;
+		position: fixed;
 		left: -20px;
 		width: 250px;
 		height: 80px;
 		display: flex;
 		background-color: #000;
 		align-items: center;
+		z-index: 3;
 	}
 	.header-principal .nav-display .contact-display .numbers{
 		width: 170px;
@@ -151,27 +153,69 @@
 	.slick-dots{
 		bottom: 0px;
 	}
+	.header-principal .menu-mobile{
+		position: absolute;
+		padding: 20px 50px 20px 50px;
+		font-size: 30px;
+		display: none;
+		z-index: 100;
+		top: 20px;
+		left: 20px;
+		color: #fff;
+		cursor: pointer;
+	}
+	@media screen and (max-width: 768px){
+		.header-principal .menu-mobile{
+			display: block;
+		}
+		.header-principal .paineis{
+			display: none;
+		}
+		.header-principal .paineis .banner-display{
+			display: none;
+		}
+		.header-principal .nav-display{
+			width: 100%;
+			left: 0;
+			padding-left: 0px;
+			padding-right: 0px;
+			transition: .4s;
+		}
+		.header-principal .nav-display .js-hidden-mobile{
+			display: none;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+		.header-principal .nav-display .links-display{
+			text-align: center;
+		}
+	}
 </style>
 
 <div class="header-principal">
+	<div class="menu-mobile">
+		<i class="fas fa-bars"></i>
+	</div>
 	<div class="nav-display">
 		<div class="logo-principal">
 			<!--<img src="imagens/identidadeVisual/<?= $cls_paginas->logo; ?>">-->
 		</div>
-		<div class="links-display">
-			<a href="index.php">INÍCIO</a>
-			<a href="sobre.php">SOBRE</a>
-			<a href="servicos.php" js-target-hover='hoverServicos'>SERVIÇOS</a>
-			<a href="cursos.php" js-target-hover='hoverCursos'>CURSOS</a>
-			<a href="">CONTATO</a>
-		</div>
-		<div class="contact-display">
-			<div class="numbers">
-				<h3>(41) <b>99275-9603</b></h3>
-				<h3>(41) <b>3555-1032</b></h3>
+		<div class="js-hidden-mobile">
+			<div class="links-display">
+				<a href="index.php">INÍCIO</a>
+				<a href="sobre.php">SOBRE</a>
+				<a href="servicos.php" js-target-hover='hoverServicos'>SERVIÇOS</a>
+				<a href="cursos.php" js-target-hover='hoverCursos'>CURSOS</a>
+				<a href="">CONTATO</a>
 			</div>
-			<div class="icon">
-				<i class="fab fa-whatsapp"></i>
+			<div class="contact-display">
+				<div class="numbers">
+					<h3>(41) <b>99275-9603</b></h3>
+					<h3>(41) <b>3555-1032</b></h3>
+				</div>
+				<div class="icon">
+					<i class="fab fa-whatsapp"></i>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -237,13 +281,16 @@
 
 <script>
 	$(document).ready(function(){
+		// Set objetos
 		var headerPrincipal = $(".header-principal");
 		var navDisplay = headerPrincipal.children(".nav-display");
 		var linksDisplay = navDisplay.children(".links-display");
 		var displayPaineis = $(".paineis");
 		var bannerDisplay = displayPaineis.children(".banner-display");
 		var hoverSection = displayPaineis.children(".hover-section-display");
+		var mobileButton = headerPrincipal.children(".menu-mobile");
 		
+		// Desktop functions
 		function select_painel(div_id = false){
 			hoverSection.children(".hover-painel").each(function(){
 				$(this).removeClass("active-hover");
@@ -255,7 +302,6 @@
 				hoverSection.css("z-index", "0");
 			}
 		}
-		
 		linksDisplay.children("a").each(function(){
 			var link = $(this);
 			var target = link.attr("js-target-hover");
@@ -275,5 +321,16 @@
 			dots: true,
 			appendDots: bannerDisplay.children(".controller"),
         });
+		// END Desktop functions
+		
+		// Mobile functions
+		function toggle_mobile(){
+			var display = $(".js-hidden-mobile");
+			display.stop().slideToggle();
+		}
+		mobileButton.off().on("click", function(){
+			toggle_mobile(); 
+		});
+		// END Mobile functions
 	});
 </script>
