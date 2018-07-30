@@ -68,10 +68,8 @@
 			}
             .main-content .content-sobre .background{
 				width: 100%;
-			}
-            .main-content .content-sobre .background img{
-				width: 100%;
-				height: 100%;
+                height: 150px;
+                background-color: #DCB81A;
 			}
 			.main-content .content-sobre .display-texto{
 				display: flex;
@@ -166,12 +164,23 @@
 						width: 50%;
 					}
 					.maincontent .display-espaco .box-espaco{
-						width: 90%;
+						width: 100%;
 					}
 					@media screen and (max-width: 768px){
 						.maincontent .display-espaco-img{
 							flex-direction: column;
 						}
+                        @media screen and (max-width: 425px){
+                            .main-content .content-sobre .background{
+                                height: 100px;
+                            }
+                            .main-content .content-sobre .title-sobre h2 {
+                                font-size: 20px;
+                            }
+                            .maincontent .display-espaco .box-img {
+                                width: 90%;
+                            }
+                        }
 					}
 				}
 			}
@@ -206,9 +215,7 @@
 							<img src="imagens/sobre/450x450.png">
 						</div>
 					</div>
-					<div class="background">
-						<img src="imagens/sobre/background.jpg">
-					</div>
+					<div class="background"></div>
 					<div class="display-texto">
 						<div class="title-sobre">
 							<center>
@@ -248,8 +255,8 @@
             	</div>
             </div>
         <?php
-            /*END PAGE CUSTONS*/
             require_once "@include-footer-principal.php";
+            /*END PAGE CUSTONS*/
         ?>
         <!--END REQUIRES PADRAO-->
     </body>

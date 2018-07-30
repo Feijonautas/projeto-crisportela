@@ -189,6 +189,11 @@
 		.header-principal .nav-display .links-display{
 			text-align: center;
 		}
+        @media screen and (max-width: 375px){
+            .header-principal .menu-mobile{
+                padding: 20px;
+            }
+        }
 	}
 </style>
 

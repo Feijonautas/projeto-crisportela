@@ -94,6 +94,32 @@
 				background: #DCB81A;
 				color: #fff;
 			}
+            @media screen and (max-width: 1325px){
+                .main-content form{
+                    width: 30%;
+                }
+                @media screen and (max-width: 768px){
+                    .main-content form{
+                        width: 45%;
+                    }
+                    .main-content .display-contato{
+                        flex-direction: column;
+                    }
+                    .main-content .display-contato .box-contato{
+                        width: calc(100% - 10%);
+                    }
+                    @media screen and (max-width: 640px){
+                        .main-content form{
+                            width: 60%;
+                        }
+                        @media screen and (max-width: 425px){
+                            .main-content form{
+                                width: 90%;
+                            }
+                        }
+                    }
+                }
+            }
         </style>
         <!--END PAGE CSS-->
         <!--PAGE JS-->
@@ -107,8 +133,8 @@
     <body>
         <!--REQUIRES PADRAO-->
         <?php
-            require_once "@link-body-scripts.php";
             require_once "@include-header-principal.php";
+            require_once "@link-body-scripts.php";
             /*PAGE CUSTONS*/
 		?>
             <div class='main-content'>
@@ -123,7 +149,7 @@
 						<span>Segunda a Sábado das 09:00 às 18:30</span>
 					</div>
 					<div class="box-contato">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14408.970062948854!2d-49.5287952!3d-25.4635763!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x431bbb7bfb684b43!2sStudio+Cris+Portela!5e0!3m2!1spt-BR!2sbr!4v1532637979275" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14408.970062948854!2d-49.5287952!3d-25.4635763!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x431bbb7bfb684b43!2sStudio+Cris+Portela!5e0!3m2!1spt-BR!2sbr!4v1532637979275" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
 				</div>
 				<form>
