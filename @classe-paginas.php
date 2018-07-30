@@ -17,7 +17,7 @@
             function __construct(){
                 $this->empresa     = "Cris Portela";
                 
-                $this->logo        = "logo-crisportela.png";
+                $this->logo        = "logo_cris_portela.png";
                 
                 $this->http        = "https://";
                 

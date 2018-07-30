@@ -3,7 +3,7 @@
 		position: relative;
 		width: 100%;
 		display: flex;
-		max-height: 100vh;
+		max-height: 65vh;
 		overflow: hidden;
 	}
 	.header-principal .nav-display{
@@ -13,13 +13,17 @@
 		color: #fff;
 	}
 	.header-principal .nav-display .logo-principal{
+		position: relative;
 		width: 150px;
 		height: 150px;
 		margin: 20px auto 20px auto;
 		background-color: #000;
 	}
 	.header-principal .nav-display .logo-principal img{
-		width: 100%;	
+		position: absolute;
+		width: 120%;
+		top: -20px;
+		left: -20px;
 	}
 	.header-principal .nav-display .links-display{
 		width: 150px;
@@ -75,13 +79,14 @@
 	.header-principal .paineis .banner-display{
 		position: relative;
 		z-index: 1;
+		height: 100px;
 	}
 	.header-principal .paineis .banner-display img{
 		width: 100%;	
 	}
 	.header-principal .paineis .banner-display .controller{
 		position: absolute;
-		bottom: 10px;
+		top: 300px;
 		margin: 0 auto;
 		left: 0;
 		right: 0;
@@ -203,7 +208,7 @@
 	</div>
 	<div class="nav-display">
 		<div class="logo-principal">
-			<!--<img src="imagens/identidadeVisual/<?= $cls_paginas->logo; ?>">-->
+			<img src="imagens/identidadeVisual/<?= $cls_paginas->logo; ?>">
 		</div>
 		<div class="js-hidden-mobile">
 			<div class="links-display">
@@ -289,7 +294,7 @@
 		// Set objetos
 		var headerPrincipal = $(".header-principal");
 		var navDisplay = headerPrincipal.children(".nav-display");
-		var linksDisplay = navDisplay.children(".links-display");
+		var linksDisplay = navDisplay.children("div").children(".links-display");
 		var displayPaineis = $(".paineis");
 		var bannerDisplay = displayPaineis.children(".banner-display");
 		var hoverSection = displayPaineis.children(".hover-section-display");

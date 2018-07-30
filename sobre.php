@@ -58,7 +58,7 @@
 			}
             .main-content .content-sobre .display-sobre .box-sobre p{
 				text-align: justify;
-				margin: 0;
+				line-height: 25px;
 			}
             .main-content .content-sobre .display-sobre .box-img{
 				width: 37%;
@@ -208,8 +208,7 @@
 					</div>
 					<div class="display-sobre">
 						<div class="box-sobre">
-							<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p><br/>
-							<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+							<p>O Studio Cris Portela situado no bairro Centro, na cidade de Campo Largo PR, iniciou suas atividades através da Profissional Cris Portela, já está na cidade a aproximadamente 6 anos, sendo que reinaugurado em 2017 em novo endereço para melhor atender seus clientes, proporcionando um melhor conforto em sua infraestrutura, agregando novos profissionais e serviços a área da Saúde,Beleza e Estética.</p> <p>Nosso espaço oferece grande variedade de serviços Estéticos, atendendo as necessidades de nossos clientes/pacientes que buscam um tratamento personalizado, visando oferecer o que há de melhor e mais moderno no conceito da Estética.</p> <p>Aliado a uma exclusiva equipe profissional especializada e comprometida, para melhor executar os procedimentos proporcionando maior satisfação e conforto aos clientes/pacientes.</p>
 						</div>
 						<div class="box-img">
 							<img src="imagens/sobre/450x450.png">
