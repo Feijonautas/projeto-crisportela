@@ -13,17 +13,17 @@
 		color: #fff;
 	}
 	.header-principal .nav-display .logo-principal{
+		display: flex;
+		justify-content: center;
 		position: relative;
 		width: 150px;
 		height: 150px;
 		margin: 20px auto 20px auto;
-		background-color: #000;
 	}
 	.header-principal .nav-display .logo-principal img{
 		position: absolute;
 		width: 120%;
 		top: -20px;
-		left: -20px;
 	}
 	.header-principal .nav-display .links-display{
 		width: 150px;
@@ -82,11 +82,11 @@
 		height: 100px;
 	}
 	.header-principal .paineis .banner-display img{
-		width: 100%;	
+		width: 100%;
 	}
 	.header-principal .paineis .banner-display .controller{
 		position: absolute;
-		top: 300px;
+		top: 20px;
 		margin: 0 auto;
 		left: 0;
 		right: 0;
@@ -169,36 +169,47 @@
 		color: #fff;
 		cursor: pointer;
 	}
-	@media screen and (max-width: 768px){
-		.header-principal .menu-mobile{
-			display: block;
+	@media screen and (max-width: 1024px){
+		.header-principal{
+			max-height: 60vh;
 		}
-		.header-principal .paineis{
-			display: none;
+		.header-principal .nav-display .logo-principal{
+			height: 75px;
 		}
-		.header-principal .paineis .banner-display{
-			display: none;
+		.header-principal .nav-display .logo-principal img{
+			width: 75%;
 		}
-		.header-principal .nav-display{
-			width: 100%;
-			left: 0;
-			padding-left: 0px;
-			padding-right: 0px;
-			transition: .4s;
+		@media screen and (max-width: 768px){
+			.header-principal .menu-mobile{
+				display: block;
+			}
+			.header-principal .paineis{
+				display: none;
+			}
+			.header-principal .paineis .banner-display{
+				display: none;
+			}
+			.header-principal .nav-display{
+				width: 100%;
+				left: 0;
+				padding-left: 0px;
+				padding-right: 0px;
+				transition: .4s;
+			}
+			.header-principal .nav-display .js-hidden-mobile{
+				display: none;
+				white-space: nowrap;
+				overflow: hidden;
+			}
+			.header-principal .nav-display .links-display{
+				text-align: center;
+			}
+			@media screen and (max-width: 375px){
+				.header-principal .menu-mobile{
+					padding: 20px;
+				}
+			}
 		}
-		.header-principal .nav-display .js-hidden-mobile{
-			display: none;
-			white-space: nowrap;
-			overflow: hidden;
-		}
-		.header-principal .nav-display .links-display{
-			text-align: center;
-		}
-        @media screen and (max-width: 375px){
-            .header-principal .menu-mobile{
-                padding: 20px;
-            }
-        }
 	}
 </style>
 
@@ -232,9 +243,9 @@
 	<div class="paineis">
 		<div class="banner-display">
 			<div class="slides">
-				<img src="imagens/banners/banner1.jpg">
-				<img src="imagens/banners/banner2.jpg">
-				<img src="imagens/banners/banner3.jpg">
+				<img src="imagens/banners/banner1.jpeg">
+				<img src="imagens/banners/banner2.jpeg">
+				<img src="imagens/banners/banner3.jpeg">
 			</div>
 			<div class="controller">
 				<!--SPAN DAS BOLINHAS DO SLIDER-->
@@ -288,7 +299,6 @@
 		</div>
 	</div>
 </div>
-
 <script>
 	$(document).ready(function(){
 		// Set objetos
