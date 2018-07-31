@@ -27,6 +27,9 @@
         <!--END DEFAULT LINKS-->
         <!--PAGE CSS-->
         <style>
+			.row-reverse{
+				flex-direction: row-reverse;
+			}
             .main-content{
 				display: flex;
 				justify-content: center;
@@ -43,6 +46,8 @@
             .main-content .content-sobre .title-sobre{
 				border-bottom: 1px solid #000;
 				width: 90%;
+				justify-content: space-between;
+				display: flex;
 			}
             .main-content .content-sobre .title-sobre h2{
 				font-size: 32px;	
@@ -73,13 +78,11 @@
 			}
 			.main-content .content-sobre .display-texto{
 				display: flex;
-				flex-direction: column;
-				align-items: center;
-				width: 100%;
-				margin-bottom: 5%;
+				justify-content: space-between;
+				padding: 20px 5%;
 			}
             .main-content .content-sobre .display-texto .box-texto{
-				width: 90%;	
+				width: 45%;
 			}
             .main-content .content-sobre .display-texto .box-texto p{
 				text-align: justify;
@@ -116,8 +119,6 @@
 			}
 			.maincontent .display-espaco .box-espaco .text-espaco{
 				width: 90%;
-				display: flex;
-				align-items: center;
 			}
 			.maincontent .display-espaco .box-espaco .text-espaco p{
 				text-align: justify;	
@@ -132,8 +133,8 @@
 			.maincontent .display-espaco-img .box-espaco-img img{
 				width: 100%;
 				height: 100%;
-				opacity: 0.5;
 				transition: .3s;
+				opacity: 0.5;
 			}
 			.maincontent .display-espaco-img .box-espaco-img img:hover{
 				transform: scale(1.1);
@@ -167,19 +168,34 @@
 						width: 100%;
 					}
 					@media screen and (max-width: 768px){
-						.maincontent .display-espaco-img{
-							flex-direction: column;
+						.maincontent .display-espaco-img .box-espaco-img{
+							height: 200px;
+						}
+						.maincontent .display-espaco .box-img {
+							width: 90%;
 						}
                         @media screen and (max-width: 425px){
+							.main-content .content-sobre .display-texto{
+								flex-direction: column;
+							}
+							.main-content .content-sobre .display-texto .box-texto{
+								width: 100%;
+							}
+							.maincontent .display-espaco-img{
+								flex-direction: column;
+							}
+							.maincontent .display-espaco-img .box-espaco-img img{
+								opacity: 1;
+							}
+							.maincontent .display-espaco-img .box-espaco-img img:hover{
+								transform: none;
+							}
                             .main-content .content-sobre .background{
                                 height: 100px;
                             }
-                            .main-content .content-sobre .title-sobre h2 {
-                                font-size: 20px;
-                            }
-                            .maincontent .display-espaco .box-img {
-                                width: 90%;
-                            }
+							.main-content .content-sobre .display-sobre .box-sobre p{
+								line-height: normal;
+							}
                         }
 					}
 				}
@@ -204,25 +220,45 @@
             <div class='main-content'>
 				<div class="content-sobre">
 					<div class="title-sobre">
-						<h1>Sobre nós</h1>
+						<h1>Sobre a Cris</h1>
 					</div>
 					<div class="display-sobre">
 						<div class="box-sobre">
-							<p>O Studio Cris Portela situado no bairro Centro, na cidade de Campo Largo PR, iniciou suas atividades através da Profissional Cris Portela, já está na cidade a aproximadamente 6 anos, sendo que reinaugurado em 2017 em novo endereço para melhor atender seus clientes, proporcionando um melhor conforto em sua infraestrutura, agregando novos profissionais e serviços a área da Saúde,Beleza e Estética.</p> <p>Nosso espaço oferece grande variedade de serviços Estéticos, atendendo as necessidades de nossos clientes/pacientes que buscam um tratamento personalizado, visando oferecer o que há de melhor e mais moderno no conceito da Estética.</p> <p>Aliado a uma exclusiva equipe profissional especializada e comprometida, para melhor executar os procedimentos proporcionando maior satisfação e conforto aos clientes/pacientes.</p>
+							<p>Atuo na área de Beleza e Estética desde 2011, com diversas especializações Nacionais e Internacionais na Área da Micropigmentação Estética e Corretiva, Remoção a Laser de Maquiagem Permanente e Tatuagem e Designer de Sobrancelhas.</p> <p>Master Trainer em micropigmentação desde 2015 e atualmente Acadêmica em Biomedicina.</p>Com comprometimento profissional nesta área, buscando sempre oferecer o melhor para seus clientes.<p>Destaque empresarial e profissional na cidade de Campo Largo neste segmento atuando com seriedade, capacitação e competência.</p>
+							<p>Crescendo em busca de agregar melhores serviços aliados à boa tecnologia e profissionalismo.</p>
 						</div>
 						<div class="box-img">
-							<img src="imagens/sobre/450x450.png">
+							<img src="imagens/sobre/sobre-mim-cris-portela.jpg">
+						</div>
+					</div>
+					<div class="title-sobre">
+						<h1>Sobre nós</h1>
+					</div>
+					<div class="display-sobre row-reverse">
+						<div class="box-sobre">
+							<p>O Studio Cris Portela situado no bairro Centro, na cidade de Campo Largo PR, iniciou suas atividades através da Profissional Cris Portela, já está na cidade a aproximadamente 6 anos, sendo que reinaugurado em 2017 em novo endereço para melhor atender seus clientes, proporcionando um melhor conforto em sua infraestrutura, agregando novos profissionais e serviços a área da Saúde,Beleza e Estética.</p> 
+						</div>
+						<div class="box-img">
+							<img src="imagens/sobre/sobre-nos-cris-portela.jpg">
 						</div>
 					</div>
 					<div class="background"></div>
 					<div class="display-texto">
-						<div class="title-sobre">
-							<center>
-								<h2>Conceito/Criação/Texto</h2>
-							</center>
+						<div class="box-texto">
+							<div class="title-sobre">
+								<h2>Nossa Missão</h2>
+							</div>
+							<div class="texto">
+								<p>é oferecer a melhor solução possível. Somos as possibilidades que gostaríamos de ter. O segredo de cada trabalho está na paixão que se coloca para levá-lo adiante. O segredo da satisfação está nas etapas percorridas para alcançá-la.</p>
+							</div>
 						</div>
 						<div class="box-texto">
-							<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+							<div class="title-sobre">
+								<h2>Nosso Objetivo</h2>
+							</div>
+							<div class="texto">
+								<p>é poder oferecer aos nossos clientes serviços com qualidade, eficiência e segurança. Destacando-se no mercado da Beleza e Estética, promovendo Saúde e bem estar.</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -230,26 +266,26 @@
             <div class="maincontent">
             	<div class="display-espaco">
             		<div class="box-img">
-            			<img src="imagens/sobre/espaco.jpg">
+            			<img src="imagens/sobre/recepcao-cris-portela.jpg">
             		</div>
             		<div class="box-espaco">
             			<div class="title">
             				<h2>Nosso espaço</h2>
             			</div>
             			<div class="text-espaco">
-            				<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.</p>
+            				<p>Nosso espaço oferece grande variedade de serviços Estéticos, atendendo as necessidades de nossos clientes/pacientes que buscam um tratamento personalizado, visando oferecer o que há de melhor e mais moderno no conceito da Estética.</p> <p>Aliado a uma exclusiva equipe profissional especializada e comprometida, para melhor executar os procedimentos proporcionando maior satisfação e conforto aos clientes/pacientes.</p>
             			</div>
             		</div>
             	</div>
             	<div class="display-espaco-img">
             		<div class="box-espaco-img">
-            			<img src="imagens/sobre/exibicao.jpg">
+            			<img src="imagens/sobre/sala-tratamento-cris-portela.jpg">
             		</div>
             		<div class="box-espaco-img">
-            			<img src="imagens/sobre/teste.jpg">
+            			<img src="imagens/sobre/escritorio-cris-portela.jpg">
             		</div>
             		<div class="box-espaco-img">
-            			<img src="imagens/sobre/espaco.jpg">
+            			<img src="imagens/sobre/sala-tratamento2-cris-portela.jpg">
             		</div>
             	</div>
             </div>
