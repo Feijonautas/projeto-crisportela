@@ -128,7 +128,6 @@
 			}
 			.maincontent .display-espaco-img .box-espaco-img{
 				flex: 1;
-				height: 225px;
 			}
 			.maincontent .display-espaco-img .box-espaco-img img{
 				width: 100%;
@@ -168,8 +167,8 @@
 						width: 100%;
 					}
 					@media screen and (max-width: 768px){
-						.maincontent .display-espaco-img .box-espaco-img{
-							height: 200px;
+						.maincontent .display-espaco-img .box-espaco-img img{
+							display: block;
 						}
 						.maincontent .display-espaco .box-img {
 							width: 90%;
