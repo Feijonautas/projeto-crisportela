@@ -279,13 +279,13 @@
             	</div>
             	<div class="display-espaco-img">
             		<div class="box-espaco-img">
-            			<img src="imagens/sobre/sala-tratamento-cris-portela.jpg">
+            			<img src="imagens/sobre/sala-tratamento-cris-portela.png">
             		</div>
             		<div class="box-espaco-img">
-            			<img src="imagens/sobre/escritorio-cris-portela.jpg">
+            			<img src="imagens/sobre/escritorio-cris-portela.png">
             		</div>
             		<div class="box-espaco-img">
-            			<img src="imagens/sobre/sala-tratamento2-cris-portela.jpg">
+            			<img src="imagens/sobre/sala-tratamento2-cris-portela.png">
             		</div>
             	</div>
             </div>
